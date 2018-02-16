@@ -1,8 +1,7 @@
 # QuantifyMe Django Backend Server
-================
 
 
-##License
+## License
 The MIT License (MIT)
 
 Copyright (c) 2018 MIT Media Lab
