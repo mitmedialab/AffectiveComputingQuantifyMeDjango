@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+
+    {% block stylesheets %}
+        {% stylesheet 'less' %}
+    {% endblock %}
+
+</head>
+<body>
+    <header>
+        {% block header %}
+        {% endblock %}
+    </header>
+{% block content %}{% endblock %}
+
+{% block javascript %}
+    <script type="text/javascript">
+        window.PAGENAME = "{% block pagename %}{% endblock %}";
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    {% javascript 'scripts' %}
+{% endblock %}
+
+</body>
+</html>
